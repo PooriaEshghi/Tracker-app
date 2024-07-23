@@ -1,13 +1,25 @@
-import React from 'react'
-import { View, StyleSheet, Text } from 'react-native'
+import React from "react";
+import { View, StyleSheet } from "react-native";
+import { Text, Button, Input } from "react-native-elements";
+import Spacer from "../components/Spacer";
 
-function SignupScreen() {
+function SignupScreen({ navigation }) {
   return (
-    <View>
-        <Text></Text>
-    </View>
-  )
-}
-const styles = StyleSheet.create({})
+    <>
+    <Spacer>
 
-export default SignupScreen
+      <Text h3>SignupScreen</Text>
+    </Spacer>
+      <Input label="Email" />
+      <Spacer/>
+      <Input label="Password" />
+      <Spacer>
+
+      <Button title="Sign Up" />
+      </Spacer>
+    </>
+  );
+}
+const styles = StyleSheet.create({});
+
+export default SignupScreen;

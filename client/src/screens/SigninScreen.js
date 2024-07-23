@@ -4,7 +4,7 @@ import { View, StyleSheet, Text } from 'react-native'
 function SigninScreen() {
   return (
     <View>
-        <Text></Text>
+        <Text style={{fontSize:40}}>Signin</Text>
     </View>
   )
 }
